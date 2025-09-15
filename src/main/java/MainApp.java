@@ -5,8 +5,11 @@ public class MainApp {
 //        stringAdd(7,"hello World");
 //        int[] arr = {1, 6, 3, 8, 9, 2, 4, 7};
 //        printArr(arr);
-        int []arr ={1,3,6,8,};
-        numberAndArr(5, arr);
+//        int []arr ={1,3,6,8,};
+//        numberAndArr(5, arr);
+        int [] arr={1,5,8,2,9};
+        addNumbertoArr(8,arr);
+
     }
 
     //    public static void stringAdd(int a, String b) {
@@ -25,9 +28,16 @@ public class MainApp {
 //        System.out.println("сумма элементов: " + sum);
 //    }
 
-    public static void numberAndArr(int n, int[] arr) {
+//    public static void numberAndArr(int n, int[] arr) {
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i]=n;
+//        }
+//        System.out.println(Arrays.toString(arr));
+//    }
+
+    public static void addNumbertoArr(int n, int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            arr[i]=n;
+            arr[i] +=2;
         }
         System.out.println(Arrays.toString(arr));
     }
