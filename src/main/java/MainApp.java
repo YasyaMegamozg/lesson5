@@ -7,8 +7,9 @@ public class MainApp {
 //        printArr(arr);
 //        int []arr ={1,3,6,8,};
 //        numberAndArr(5, arr);
-        int [] arr={1,5,8,2,9};
-        addNumbertoArr(8,arr);
+//        int [] arr={1,5,8,2,9};
+//        addNumbertoArr(8,arr);
+        sumHalv(7, 5, 4, 3, 9, 4, 1, 5);
 
     }
 
@@ -35,9 +36,28 @@ public class MainApp {
 //        System.out.println(Arrays.toString(arr));
 //    }
 
-    public static void addNumbertoArr(int n, int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] +=2;
+//    public static void addNumbertoArr(int n, int[] arr) {
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] +=2;
+//        }
+//        System.out.println(Arrays.toString(arr));
+//    }
+
+    public static void sumHalv(int... arr) {
+        int sum1 = 0;
+        int sum2 = 0;
+        for (int i = 0; i < arr.length / 2; i++) {
+            sum1 += arr[i];
+        }
+        for (int i = arr.length / 2; i < arr.length; i++) {
+            sum2 += arr[i];
+        }
+        if (sum1 > sum2) {
+            System.out.println("Первая половина больше: " + sum1 + " > " + sum2);
+        } else if (sum2 > sum1) {
+            System.out.println("Вторая половина больше: " + sum2 + " > " + sum1);
+        } else {
+            System.out.println("Суммы равны: " + sum1 + " = " + sum2);
         }
         System.out.println(Arrays.toString(arr));
     }
